@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Entities.MediaItemsEntity" table="MediaItems" schema="dbo" catalog="ronigu">
+        <id name="mid">
+            <column name="MID" sql-type="bigint"/>
+        </id>
+        <property name="prodYear">
+            <column name="PROD_YEAR" sql-type="bigint" not-null="true"/>
+        </property>
+        <property name="title">
+            <column name="TITLE" sql-type="varchar(max)" length="2147483647" not-null="true"/>
+        </property>
+        <property name="titleLength">
+            <column name="TITLE_LENGTH" sql-type="bigint" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
