@@ -4,28 +4,24 @@
     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
-    <property name="connection.url">
-<!--      jdbc:sqlserver://132.72.64.124:1433-->
-      jdbc:sqlserver://132.72.64.124;databaseName=ronigu;user=ronigu;password=yXq1af7k;encrypt=false;
-
-    </property>
+    <property name="connection.url">jdbc:sqlserver://132.72.64.124:1433;database=ronigu;encrypt=false</property>
     <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
     <property name="connection.username">ronigu</property>
     <property name="connection.password">yXq1af7k</property>
     <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
-    <mapping resource="AdministratorsEntity.hbm.xml"/>
-    <mapping resource="HistoryEntity.hbm.xml"/>
-    <mapping resource="LoginLogEntity.hbm.xml"/>
-    <mapping resource="MediaItemsEntity.hbm.xml"/>
-    <mapping resource="SimilarityEntity.hbm.xml"/>
-    <mapping resource="UsersEntity.hbm.xml"/>
+    <mapping resource="Assignment2/AdministratorsEntity.hbm.xml"/>
+    <mapping resource="Assignment2/HistoryEntity.hbm.xml"/>
+    <mapping resource="Assignment2/LoginLogEntity.hbm.xml"/>
+    <mapping resource="Assignment2/MediaItemsEntity.hbm.xml"/>
+    <mapping resource="Assignment2/SimilarityEntity.hbm.xml"/>
+    <mapping resource="Assignment2/UsersEntity.hbm.xml"/>
 
 <!--    <mapping class="Entities.AdministratorsEntity"/>-->
-<!--    <mapping class="Entities.HistoryEntity"/>-->
-<!--    <mapping class="Entities.LoginLogEntity"/>-->
-<!--    <mapping class="Entities.MediaItemsEntity"/>-->
-<!--    <mapping class="Entities.SimilarityEntity"/>-->
-<!--    <mapping class="Entities.UsersEntity"/>-->
+<!--    <mapping class="Assignment2.Entities.HistoryEntity"/>-->
+<!--    <mapping class="Assignment2.Entities.LoginLogEntity"/>-->
+<!--    <mapping class="Assignment2.Entities.MediaItemsEntity"/>-->
+<!--    <mapping class="Assignment2.Entities.SimilarityEntity"/>-->
+<!--    <mapping class="Assignment2.Entities.UsersEntity"/>-->
       <!-- <property name="connection.username"/> -->
     <!-- <property name="connection.password"/> -->
 

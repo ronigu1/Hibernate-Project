@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="Entities.UsersEntity" table="Users" schema="dbo" catalog="ronigu">
+    <class name="Assignment2.Entities.UsersEntity" table="Users" schema="dbo" catalog="ronigu">
 <!--        <id name="userid">-->
 <!--            <column name="USERID" sql-type="numeric(18)" precision="18"/>-->
 <!--            <generator class="increment"></generator>-->

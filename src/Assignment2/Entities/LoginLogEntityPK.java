@@ -1,4 +1,4 @@
-package Entities;
+package Assignment2.Entities;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;

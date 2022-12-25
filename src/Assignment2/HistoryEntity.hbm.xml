@@ -4,8 +4,8 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="Entities.HistoryEntity" table="History" schema="dbo" catalog="ronigu">
-        <composite-id mapped="true" class="Entities.HistoryEntityPK">
+    <class name="Assignment2.Entities.HistoryEntity" table="History" schema="dbo" catalog="ronigu">
+        <composite-id mapped="true" class="Assignment2.Entities.HistoryEntityPK">
             <key-property name="userid">
                 <column name="USERID" sql-type="numeric(18)" precision="18"/>
             </key-property>

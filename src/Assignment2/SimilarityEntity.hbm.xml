@@ -4,8 +4,8 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="Entities.SimilarityEntity" table="Similarity" schema="dbo" catalog="ronigu">
-        <composite-id mapped="true" class="Entities.SimilarityEntityPK">
+    <class name="Assignment2.Entities.SimilarityEntity" table="Similarity" schema="dbo" catalog="ronigu">
+        <composite-id mapped="true" class="Assignment2.Entities.SimilarityEntityPK">
             <key-property name="mid1">
                 <column name="MID1" sql-type="bigint"/>
             </key-property>

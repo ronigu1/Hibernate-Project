@@ -1,4 +1,5 @@
-package hib;
+package Assignment2.hib;
+
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -9,7 +10,7 @@ import org.hibernate.cfg.*;
 
 /**
  * @author tsikinov
- *  
+ *
  */
 public class HibernateUtil {
 
@@ -20,22 +21,22 @@ public class HibernateUtil {
         try {
             // Create the SessionFactory                
             sessionFactory = new Configuration().configure().buildSessionFactory();
-           
+
         } catch (Throwable ex) {
-            
+
             log.error("Initial SessionFactory creation failed.", ex);
             throw new ExceptionInInitializerError(ex);
-            
+
         } // end of the try - catch block
-        
+
     } // end of static block
 
     public static final ThreadLocal<Session> session = new ThreadLocal<Session>();
 
     public static Session currentSession() throws HibernateException {
-        
+
         Session s = (Session) session.get();
-        
+
         // Open a new Session, if this Thread has none yet
         if (s == null) {
             s = sessionFactory.openSession();
